@@ -1,0 +1,90 @@
+.main-container {
+    -fx-background-color: #2c3e50;
+    -fx-padding: 10;
+}
+
+.menu-bar {
+    -fx-background-color: #34495e;
+    -fx-border-color: #1abc9c;
+    -fx-border-width: 0 0 2 0;
+}
+
+.menu-item {
+    -fx-text-fill: #ecf0f1; /* Light text color */
+    -fx-padding: 10;
+    -fx-cursor: hand;
+}
+
+.menu-item:hover {
+    -fx-text-fill: #1abc9c; /* Change color on hover */
+    -fx-opacity: 0.8;
+}
+
+.line-chart {
+    -fx-background-color: #2c3e50;
+    -fx-padding: 10;
+}
+
+.x-axis, .y-axis {
+    -fx-label-fill: #ffffff; /* White axis labels */
+    -fx-font-size: 12px;
+}
+
+.line-chart .chart-legend {
+    -fx-background-color: transparent;
+    -fx-font-size: 25px;
+}
+
+.line-chart .chart-plot-background {
+    -fx-background-color: #34495e;
+}
+
+.pagination {
+    -fx-background-color: #34495e;
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+.pagination .page-number {
+    -fx-text-fill: #ffffff; /* White text color for page numbers */
+    -fx-font-size: 12px;
+}
+
+.pagination .page-number:hover {
+    -fx-text-fill: #1abc9c; /* Highlight on hover */
+    -fx-opacity: 0.8;
+}
+
+.table-view {
+    -fx-background-color: #34495e; /* Table background */
+    -fx-border-color: #1abc9c; /* Accent border */
+    -fx-border-width: 1; /* Border width */
+}
+
+.table-view .table-header {
+    -fx-background-color: #1abc9c; /* Header background color */
+    -fx-text-fill: #ffffff; /* Header text color */
+    -fx-font-weight: bold; /* Bold header text */
+}
+
+.table-view .table-header .table-header-cell {
+    -fx-background-color: #1abc9c; /* Header cell background color */
+    -fx-text-fill: #ffffff; /* Header cell text color */
+}
+
+.table-view .table-row-cell {
+    -fx-text-fill: #ecf0f1; /* Row text color */
+    -fx-background-color: transparent; /* Default row background */
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #1abc9c; /* Highlight on hover */
+}
+
+.table-view .table-row-cell:filled:hover {
+    -fx-background-color: #16a085; /* Different color for filled rows on hover */
+}
+
+* {
+    -fx-text-fill: orange; /* Set default text color to white */
+}

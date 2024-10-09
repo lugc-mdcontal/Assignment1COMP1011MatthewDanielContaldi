@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefWidth="500.0" spacing="0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.cryptocoach.controllers.ChartController" styleClass="main-container">
+    <children>
+        <MenuBar styleClass="menu-bar" prefWidth="500.0">
+            <menus>
+                <Menu mnemonicParsing="false">
+                    <graphic>
+                        <Label fx:id="chartButton" onMouseClicked="#onChartClicked" text="Chart" styleClass="menu-item">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                    </graphic>
+                </Menu>
+                <Menu mnemonicParsing="false">
+                    <graphic>
+                        <Label fx:id="tableButton" onMouseClicked="#onTableClicked" text="Table" styleClass="menu-item">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                    </graphic>
+                </Menu>
+            </menus>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </MenuBar>
+        <LineChart fx:id="lineChart" VBox.vgrow="ALWAYS" styleClass="line-chart">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" styleClass="x-axis" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" styleClass="y-axis" />
+            </yAxis>
+        </LineChart>
+        <Pagination fx:id="cryptoSelector" maxPageIndicatorCount="5" pageCount="1" prefHeight="17.0" prefWidth="999.0" scaleX="2.0" scaleY="2.0" scaleZ="2.0" styleClass="pagination">
+            <VBox.margin>
+                <Insets bottom="35.0" left="25.0" right="25.0" top="25.0" />
+            </VBox.margin>
+        </Pagination>
+    </children>
+</VBox>
